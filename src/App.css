@@ -1,4 +1,5 @@
 .container {
+    
     background-color: #c00025;
     width: 100%;
     max-width: 550px;
@@ -7,6 +8,7 @@
     padding-bottom: 25px;
 }
 .display {
+    margin: 0 auto;
     margin-top: 25px;
     height: 100px;
     width: 450px;
@@ -19,4 +21,52 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
+    
   }
+
+
+
+
+
+
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+ }
+ .other{
+    /*  border: 1px solid white; */
+    display:flex;
+    width: 98%;
+    margin: 0 auto;
+    
+ }
+
+
+.other1{
+    width: 50%;
+}
+
+.buttons{
+    background: dodgerblue;
+    border-radius: 150%;
+    width: 50px;
+    height:50px;
+    margin: 5%;   
+ }
+.opButton{
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 50%;
+    margin-top: 3%;
+}
+
+.numButton{/* border: 5px groove white; */
+   margin: 3%;
+   margin-left: 5%;
+}
+.spButton{
+    margin-left: 2.7%;
+}
+
+ 
