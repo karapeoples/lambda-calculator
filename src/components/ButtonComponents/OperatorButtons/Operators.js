@@ -5,7 +5,7 @@ import OperatorButton from "./OperatorButton"
 
 //Import your array data to from the provided data file
 
-const Operators = (props) => {
+const Operators = () => {
   
 
     const [operatorState] = useState(operators);

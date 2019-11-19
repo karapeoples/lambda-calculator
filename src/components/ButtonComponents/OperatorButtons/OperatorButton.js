@@ -1,13 +1,13 @@
 import React from "react";
 
 const OperatorButton = props => {
-    console.log (props)
+    
 
     return (
 
     <span className="opButton">
 
-    <button className = 'buttons'> 
+    <button className = 'buttons1'> 
     {props.button}</button>
 
     </span>
