@@ -5,7 +5,7 @@ import OperatorButton from "./OperatorButton"
 
 //Import your array data to from the provided data file
 
-const Operators = () => {
+const Operators = (props) => {
   
 
     const [operatorState] = useState(operators);
@@ -16,7 +16,7 @@ const Operators = () => {
   
           {operatorState.map((sign, index) => (
   
-            <OperatorButton key={index} button={sign.char} />
+            <OperatorButton key={index} button={sign.char} buttonV={sign.value} newInfo={props.newInfo} />
           
           ))}
         </div>

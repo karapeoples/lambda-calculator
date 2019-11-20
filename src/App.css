@@ -24,7 +24,6 @@
 
 
 .other {
-	/*  border: 1px solid white; */
 	display: flex;
 	width: 100%;
 	justify-content: center;
@@ -55,6 +54,7 @@
 	
     
 }
+
 .opButton {
 	display: flex;
 	justify-content: flex-end;
@@ -63,10 +63,8 @@
 }
 
 .numButton {
-	/* border: 5px groove white; */
 	margin: 3%;
     margin-left: 5%;
-   
 }
 .spButton {
 	margin-left: 2.5%;

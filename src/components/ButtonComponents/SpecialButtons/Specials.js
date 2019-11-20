@@ -5,7 +5,7 @@ import SpecialButton from "./SpecialButton"
 
 //Import your array data to from the provided data file
 
-const Specials = () => {
+const Specials = (props) => {
 
   const [specialState] = useState(specials);
   
@@ -15,7 +15,7 @@ const Specials = () => {
 
         {specialState.map((extra, index) => (
 
-          <SpecialButton key={index} button={extra} />
+          <SpecialButton key={index} button={extra} newInfo={props.newInfo} />
         
         ))}
       </div>

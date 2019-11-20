@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 
 // STEP 4 - import the button and display components
@@ -13,7 +13,9 @@ import Specials from "./components/ButtonComponents/SpecialButtons/Specials";
 
 function App() {
 
+  const [info, setInfo] = useState(0);
   
+  const newInfo = (entry) => {setInfo (entry)};
 
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
   // Once the state hooks are in place write some functions to hold data in state and update that data depending on what it needs to be doing
@@ -24,18 +26,18 @@ function App() {
   return (
     <div className="container">
       <Logo />
-      <Display />
+      <Display  info={info}/>
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-      <Specials/>
+      <Specials newInfo = {newInfo}/>
       <section className = 'other'>
 
       <div>
-      <Numbers/>
+      <Numbers newInfo={newInfo}/>
       </div>
 
       <div className ='other1'>
-      <Operators/>
+      <Operators newInfo ={newInfo}/>
       </div>
 
       </section>

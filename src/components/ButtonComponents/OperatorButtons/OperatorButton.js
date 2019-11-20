@@ -7,7 +7,7 @@ const OperatorButton = props => {
 
     <span className="opButton">
 
-    <button className = 'buttons1'> 
+    <button className = 'buttons1'onClick={()=>{props.newInfo(props.buttonV)}}> 
     {props.button}</button>
 
     </span>

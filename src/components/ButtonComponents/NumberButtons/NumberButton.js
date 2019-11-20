@@ -5,7 +5,7 @@ const NumberButton = props => {
  
   return (
     <span className= 'numButton'>
-    <button className = 'buttons2'> 
+    <button className = 'buttons2'onClick={()=>{props.newInfo(props.button)}}> 
     {props.button}</button>
     </span>
   );
